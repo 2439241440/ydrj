@@ -108,7 +108,7 @@ body {
   border-bottom: 4px solid #ff9900;
   box-sizing: border-box;
 }
-.home .row .nav > button {
+.home .row .nav > p {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -117,8 +117,36 @@ body {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
   right: 20px;
-  border-color: #ddd;
-  font-size: 20px;
+}
+.home .row .nav > p > img {
+  width: 38px;
+  height: 28px;
+}
+.home .row .nav > p.tell {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: 70px;
+  display: block;
+  font-size: 24px;
+  color: #1772c3;
+  padding-left: 28px;
+}
+.home .row .nav > p.tell > img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 0px;
+  width: 26px;
+  height: 22px;
 }
 @media (max-width: 768px) {
   .home .row .nav {

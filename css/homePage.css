@@ -464,8 +464,41 @@
 .homePage {
   overflow: hidden;
 }
-.homePage .banner > img {
+.homePage > .banner > img {
   width: 100%;
+}
+.homePage > .service {
+  padding-top: 80px;
+  background-color: #fff;
+}
+.homePage > .service > h3 {
+  text-align: center;
+  color: #444;
+  font-size: 30px;
+}
+.homePage > .service > p {
+  text-align: center;
+  color: #999;
+}
+.homePage > .service > .container {
+  margin-top: 52px;
+}
+.homePage > .service > .container > ul {
+  list-style: none;
+}
+.homePage > .service > .container > ul > li {
+  list-style: none;
+  height: 230px;
+  padding: 0;
+}
+.homePage > .service > .container > ul > li > img {
+  float: left;
+}
+.homePage > .service > .container > ul > li > p {
+  float: left;
+  font-size: 22px;
+  color: #999;
+  margin-left: 30px;
 }
 @media (max-width: 768px) {
   .homePage .banner > .msg {
