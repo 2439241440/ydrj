@@ -468,7 +468,7 @@
   width: 100%;
 }
 .homePage > .service {
-  padding-top: 80px;
+  padding-top: 40px;
   background-color: #fff;
 }
 .homePage > .service > h3 {
@@ -490,13 +490,25 @@
   list-style: none;
   height: 230px;
   padding: 0;
+  padding-left: 20px;
 }
-.homePage > .service > .container > ul > li > img {
+.homePage > .service > .container > ul > li .con {
+  width: 340px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.homePage > .service > .container > ul > li .con > img {
   float: left;
 }
-.homePage > .service > .container > ul > li > p {
+.homePage > .service > .container > ul > li .con > p {
   float: left;
-  font-size: 22px;
+  font-size: 18px;
   color: #999;
   margin-left: 30px;
 }
@@ -521,6 +533,71 @@
     color: #1772c3;
     font-size: 16px;
   }
+  .homePage > .service {
+    padding-top: 10px;
+    background-color: #fff;
+  }
+  .homePage > .service > h3 {
+    text-align: center;
+    color: #444;
+    font-size: 15px;
+  }
+  .homePage > .service > p {
+    text-align: center;
+    color: #999;
+  }
+  .homePage > .service > .container {
+    margin-top: 26px;
+  }
+  .homePage > .service > .container > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .homePage > .service > .container > ul > li {
+    list-style: none;
+    height: 160px;
+    padding: 0;
+    position: relative;
+    /*border-top: 1px solid #f5f5f5;
+            border-bottom: 1px solid #f5f5f5;*/
+  }
+  .homePage > .service > .container > ul > li .con {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .homePage > .service > .container > ul > li .con > img {
+    float: left;
+    width: 60px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  .homePage > .service > .container > ul > li .con > p {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    left: 80px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) and (max-width: 992px) {
@@ -543,6 +620,9 @@
   .homePage .banner > .msg > p {
     color: #1772c3;
     font-size: 16px;
+  }
+  .homePage > .service > .container {
+    margin-top: 26px;
   }
 }
 /* 中等屏幕（桌面显示器，大于等于 992px） */
