@@ -1,0 +1,288 @@
+html{
+	font-family: sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+body{
+	background-color: #f0f0f0;
+	color:#444;
+	font-size: 16px;
+}
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	border:0;
+	padding:0;
+	font-style:normal;
+}
+html,body {
+	-webkit-touch-callout:none;
+	-webkit-text-size-adjust:none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-user-select:none;
+	font-size: 0.3rem;
+	color:#444;
+}
+nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{
+	display: block;
+}
+img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea{
+	display:inline-block;
+}
+header,section,footer {
+	position:relative;
+}
+ol,ul{
+	list-style:none;
+}
+input,button,textarea {
+	border:0;
+	margin:0;
+	padding:0;
+	font-size:1em;
+	line-height:1em;
+	/*-webkit-appearance:none;*/
+	background-color:rgba(0, 0, 0, 0);
+	outline: none;
+}
+span{
+	display:inline-block;
+}
+a:active, a:hover {
+  outline: 0;
+}
+a, a:visited{
+	text-decoration:none;
+}
+
+label, .wordWrap{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,th {
+  padding: 0;
+}
+.clearfix::before,
+.clearfix::after{
+	content:'';
+	display: block;
+	height:0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom:0;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+/*  ----- 定义版心 ------*/
+.main{
+	width: 1200px!important;
+	margin:auto;
+}
+
+/*---- 页面遮罩 ----*/
+.mask{
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0.5;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 8;
+	display: none;
+}
+
+.mask_share{
+	width: 100vw;
+	height: 100vh;
+	background-color:rgba(0,0,0,0.6);
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 99;
+	display: none;
+}
+.mask_share span{
+	font-size:14vw;
+	position:absolute;
+	right:2vw;
+	top:2vw;
+	color: #fff;
+}
+.mask_share .mask_info{
+	margin-top:5rem;
+	text-align: center;
+	color:#fff;
+	z-index: 100;
+	font-size:0.38rem;
+	line-height:0.5rem;
+}
+
+.mask_item{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	/*background-color: rgba(0,0,0,0.4);*/
+	z-index: 12;
+	display: none;
+}
+.mask_item img{
+	width: 0.5rem;
+	height: 0.5rem;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.fp-tableCell{
+	display:block!important;
+}
+
+
+/*------- 确认支付弹出框  -------*/
+body .confirm{
+	width: 80vw;
+	border-radius:2vw;
+}
+body .confirm .layui-layer-title{
+	background:#fff;
+	color:#444;
+	border: none;
+	font-size:4.5vw;
+	text-align: center;
+	padding: 0;
+	border-radius:2vw;
+	padding-top: 0.2rem;
+}
+body .confirm .layui-layer-content{
+	background:#fff;
+	color:#444;
+	border: none;
+	text-align: center;
+	padding: 3vw;
+	font-size: 4.5vw;
+
+}
+body .confirm .layui-layer-btn{
+	text-align: center;
+	padding: 0;
+	border-top:0.3vw solid #f0f0f0;
+}
+body .confirm .layui-layer-btn::before,
+body .confirm .layui-layer-btn::after{
+	content:'';
+	display: block;
+	height:0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+body .confirm .layui-layer-btn a{
+	color:#db3416;
+	border: none;
+	width: 49.8%;
+	height: 11.7vw;
+	line-height: 11.7vw;
+	font-size: 4vw;
+}
+body .confirm .layui-layer-btn .layui-layer-btn0{
+	margin: 0;
+	float:right;
+	background-color: transparent;
+	box-sizing: border-box;
+
+}
+body .confirm .layui-layer-btn .layui-layer-btn1{
+	margin: 0;
+	float:left;
+	background-color: transparent;
+	border-right:0.3vw solid #f0f0f0;
+	box-sizing: border-box;
+	color:#999;
+
+}
+body .confirm .layui-layer-content{
+	overflow: auto!important;
+	max-height:40vw!important;
+	line-height: 120%!important;
+	position:relative;
+}
+body .confirm .layui-layer-content>span{
+	font-size: 3.5vw;
+	display: inline-block;
+	width: 33.3%;
+	text-align: center;
+	float:left;
+	color:#db3616;
+}
+
+body .confirm .layui-layer-content .inputNum{
+	text-align: center!important;
+}
+body .confirm .layui-layer-content input{
+	height: 0.75rem;
+	width: 4.5rem;
+	font-size:0.3rem;
+	border: 0.01rem solid #ddd;
+	/*text-align: center;*/
+	border-radius:1vw;
+	letter-spacing:0.6rem;
+	-webkit-text-security:disc;
+	text-security:disc;
+	padding-left:0.4rem;
+	box-sizing: border-box;
+	position:relative;
+	z-index: 99999;
+	color:#fff;
+	-webkit-appearance: none;
+
+
+}
+body .confirm .layui-layer-content ul.border{
+	position:absolute;
+	height: 0.75rem;
+	width: 4.5rem;
+	top:3vw;
+	left:0.75rem;
+	/*z-index: 0;*/
+}
+body .confirm .layui-layer-content ul.border li{
+	width: 0.75rem;
+	height: 0.75rem;
+	box-sizing: border-box;
+	border-right: 0.02rem solid #ddd;
+	float:left;
+	text-align: center;
+	line-height: 0.75rem;
+}
+body .confirm .layui-layer-content ul.border li:nth-last-child(1){
+	border-right: 0;
+}
+body .confirm .layui-layer-content ul.border li>img{
+	width: 0.2rem;
+	height: 0.2rem;
+	position:relative;
+	z-index: 999999999;
+	display: none;
+}
+body .confirm .layui-layer-content ul.border li.active img{
+	display: inline-block;
+}

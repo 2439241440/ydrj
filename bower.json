@@ -1,0 +1,17 @@
+{
+  "name": "YDRJ",
+  "authors": [
+    "jian <2439241440@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

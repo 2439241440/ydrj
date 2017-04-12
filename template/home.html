@@ -1,0 +1,40 @@
+
+
+<link rel="stylesheet" href="/css/home.css">
+<div class="home">
+    <div class="container">
+        <div class="row">
+            <div class="nav main  col-md-10 col-sm-12 col-xs-12" ng-if="navShow" >
+                <h1>益等软件</h1>
+                <img src="/image/logo.png" >
+                <ul ng-show="isShowMenu">
+                    <li ng-class="{'current':index == 0}" ui-sref="home.homePage"  ng-click="changePage(0)">首页</li>
+                    <li ng-class="{'current':index == 1}" ui-sref="home.service" ng-click="changePage(1)">服务流程</li>
+                    <li ng-class="{'current':index == 2}" ui-sref="home.mass" ng-click="changePage(2)">质量监督</li>
+                    <li ng-class="{'current':index == 3}" ui-sref="home.example" ng-click="changePage(3)">经典案例</li>
+                    <li ng-class="{'current':index == 4}" ui-sref="home.join" ng-click="changePage(4)">加入我们</li>
+                    <li ng-class="{'current':index == 5}" ui-sref="home.about" ng-click="changePage(5)">关于益等</li>
+                </ul>
+                <!--<button class="glyphicon glyphicon-list pull-right hidden-md hidden-lg "></button>-->
+                <button ng-click="toggle()" type="button" class="btn btn-default glyphicon glyphicon-list pull-right hidden-md hidden-lg"></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ui-view="home"></div>
+
+
+<!--
+<div class="tell">
+    <img src="/image/客服.png" alt="">
+    <p>400-800-200</p>
+</div>
+
+<div class="toTop">
+    <img src="/image/to_top.png">
+</div>
+<div class="toBottom">
+    <img src="/image/to_top.png">
+</div>-->

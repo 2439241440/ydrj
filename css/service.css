@@ -1,0 +1,462 @@
+/*.toTop{
+  position:fixed;
+  bottom:65px;
+  right:137px;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius:50%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.6);
+  >img {
+    width: 30px;
+  }
+}*/
+/*------- 第一屏 -------*/
+#service #section0 {
+  position: relative;
+  background: url('/image/Serviceprocess-banner.png') top center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#service #section0 .nav {
+  height: 88px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 50px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+}
+#service #section0 .nav > h1 {
+  left: 99999999px;
+  position: absolute;
+}
+#service #section0 .nav > img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 48px;
+}
+#service #section0 .nav > ul {
+  float: right;
+}
+#service #section0 .nav > ul > li {
+  float: left;
+  width: 130px;
+  height: 100px;
+  line-height: 88px;
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+}
+#service #section0 .nav > ul > li.current {
+  background-color: #1772c3;
+  color: #fff;
+  border-bottom: 4px solid #ff91200;
+  box-sizing: border-box;
+}
+#service #section0 .msg {
+  position: absolute;
+  right: 340px;
+  top: 625px;
+}
+#service #section0 .msg > h4 {
+  color: #f7f7f7;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+#service #section0 .msg > h4 > span {
+  font-size: 42px;
+}
+#service #section0 .msg > p {
+  color: #f7f7f7;
+  font-size: 16px;
+}
+/*------- 第二屏 -------*/
+#service #section1 {
+  background: #fff;
+  box-sizing: border-box !important;
+  position: relative;
+}
+#service #section1 .service {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#service #section1 .service > h4 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 34px;
+}
+#service #section1 .service > p {
+  text-align: center;
+  margin-top: 12px;
+  color: #999;
+}
+#service #section1 .service > div.con {
+  height: 75vh;
+  position: relative;
+}
+#service #section1 .service > div.con > .main_img {
+  position: absolute;
+  left: 50%;
+  margin-left: -263px;
+  -webkit-transform: translate(95px, 0);
+  -moz-transform: translate(95px, 0);
+  -ms-transform: translate(95px, 0);
+  -o-transform: translate(95px, 0);
+  transform: translate(95px, 0);
+  top: 30vh;
+}
+#service #section1 .service > div.con > .main_img > p {
+  font-size: 34px;
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  width: 336px;
+  text-align: center;
+}
+#service #section1 .service > div.con > ul {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-53px, 0);
+  -moz-transform: translate(-53px, 0);
+  -ms-transform: translate(-53px, 0);
+  -o-transform: translate(-53px, 0);
+  transform: translate(-53px, 0);
+  top: 8vh;
+}
+#service #section1 .service > div.con > ul > li {
+  position: absolute;
+}
+#service #section1 .service > div.con > ul > li > img {
+  width: 112px;
+}
+#service #section1 .service > div.con > ul > li:nth-child(1) {
+  top: 130px;
+  left: -345px;
+}
+#service #section1 .service > div.con > ul > li:nth-child(2) {
+  top: 16px;
+  left: -184px;
+}
+#service #section1 .service > div.con > ul > li:nth-child(3) {
+  top: 0;
+  left: 0;
+}
+#service #section1 .service > div.con > ul > li:nth-child(4) {
+  top: 16px;
+  left: 184px;
+}
+#service #section1 .service > div.con > ul > li:nth-child(5) {
+  top: 130px;
+  left: 345px;
+}
+#service #section1 .service > div.con > ul.leave > li {
+  transition: all 0s 0.5s;
+  opacity: 0;
+}
+#service #section1 .service > div.con > ul.leave > li:nth-child(1) {
+  -webkit-transform: translate(345px, 31vh);
+  -moz-transform: translate(345px, 31vh);
+  -ms-transform: translate(345px, 31vh);
+  -o-transform: translate(345px, 31vh);
+  transform: translate(345px, 31vh);
+}
+#service #section1 .service > div.con > ul.leave > li:nth-child(2) {
+  -webkit-transform: translate(184px, 31vh);
+  -moz-transform: translate(184px, 31vh);
+  -ms-transform: translate(184px, 31vh);
+  -o-transform: translate(184px, 31vh);
+  transform: translate(184px, 31vh);
+}
+#service #section1 .service > div.con > ul.leave > li:nth-child(3) {
+  -webkit-transform: translate(0px, 31vh);
+  -moz-transform: translate(0px, 31vh);
+  -ms-transform: translate(0px, 31vh);
+  -o-transform: translate(0px, 31vh);
+  transform: translate(0px, 31vh);
+}
+#service #section1 .service > div.con > ul.leave > li:nth-child(4) {
+  -webkit-transform: translate(-184px, 31vh);
+  -moz-transform: translate(-184px, 31vh);
+  -ms-transform: translate(-184px, 31vh);
+  -o-transform: translate(-184px, 31vh);
+  transform: translate(-184px, 31vh);
+}
+#service #section1 .service > div.con > ul.leave > li:nth-child(5) {
+  -webkit-transform: translate(-345px, 31vh);
+  -moz-transform: translate(-345px, 31vh);
+  -ms-transform: translate(-345px, 31vh);
+  -o-transform: translate(-345px, 31vh);
+  transform: translate(-345px, 31vh);
+}
+#service #section1 .service > div.con > ul.join > li {
+  display: block;
+}
+#service #section1 .service > div.con > ul.join > li:nth-child(1) {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.5s 0.5s;
+}
+#service #section1 .service > div.con > ul.join > li:nth-child(2) {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.5s 1s;
+}
+#service #section1 .service > div.con > ul.join > li:nth-child(3) {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.5s 1.5s;
+}
+#service #section1 .service > div.con > ul.join > li:nth-child(4) {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.5s 2s;
+}
+#service #section1 .service > div.con > ul.join > li:nth-child(5) {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.5s 2.5s;
+}
+/*------- 第三屏 -------*/
+#service .stepCom {
+  background-color: #fff;
+}
+#service .stepCom .step {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 400px;
+}
+#service .stepCom .step > img {
+  width: 700px;
+  opacity: 0.6;
+}
+#service .stepCom .step > .con {
+  padding-top: 42px;
+}
+#service .stepCom .step > .con > img {
+  margin-bottom: 48px;
+}
+#service .stepCom .step > .con > p {
+  font-size: 16px;
+  line-height: 36px;
+}
+#service .stepCom:nth-child(2n) {
+  background-color: #fff;
+}
+#service .stepCom:nth-child(2n) .step > img {
+  float: right;
+}
+#service .stepCom:nth-child(2n) .step > .con {
+  float: left;
+  transition: all 0.5s;
+}
+#service .stepCom:nth-child(2n) .step > .con > img {
+  -webkit-transform: translate(-900px, 0);
+  -moz-transform: translate(-900px, 0);
+  -ms-transform: translate(-900px, 0);
+  -o-transform: translate(-900px, 0);
+  transform: translate(-900px, 0);
+}
+#service .stepCom:nth-child(2n) .step > .con > p {
+  opacity: 0;
+}
+#service .stepCom:nth-child(2n) .step.join > img {
+  opacity: 1;
+  transition: all 1s 0.5s;
+}
+#service .stepCom:nth-child(2n) .step.join > .con > img {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 1s 0.5s;
+}
+#service .stepCom:nth-child(2n) .step.join > .con > p {
+  opacity: 1;
+  transition: all 1s 1s;
+}
+#service .stepCom:nth-child(2n) .step.leave > img {
+  opacity: 0.6;
+  transition: all 0.5s 0.5s;
+}
+#service .stepCom:nth-child(2n) .step.leave > .con {
+  transition: all 0.5s;
+}
+#service .stepCom:nth-child(2n) .step.leave > .con > img {
+  -webkit-transform: translate(-900px, 0);
+  -moz-transform: translate(-900px, 0);
+  -ms-transform: translate(-900px, 0);
+  -o-transform: translate(-900px, 0);
+  transform: translate(-900px, 0);
+}
+#service .stepCom:nth-child(2n) .step.leave > .con > p {
+  opacity: 0;
+}
+#service .stepCom:nth-child(2n-1) {
+  background-color: #f5f5f5;
+}
+#service .stepCom:nth-child(2n-1) .step > img {
+  float: left;
+}
+#service .stepCom:nth-child(2n-1) .step > .con {
+  float: right;
+  transition: all 0.5s;
+}
+#service .stepCom:nth-child(2n-1) .step > .con > img {
+  -webkit-transform: translate(900px, 0);
+  -moz-transform: translate(900px, 0);
+  -ms-transform: translate(900px, 0);
+  -o-transform: translate(900px, 0);
+  transform: translate(900px, 0);
+}
+#service .stepCom:nth-child(2n-1) .step > .con > p {
+  opacity: 0;
+}
+#service .stepCom:nth-child(2n-1) .step.join > img {
+  opacity: 1;
+  transition: all 1s 0.5s;
+}
+#service .stepCom:nth-child(2n-1) .step.join > .con > img {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 1s 0.5s;
+}
+#service .stepCom:nth-child(2n-1) .step.join > .con > p {
+  opacity: 1;
+  transition: all 1s 1s;
+}
+#service .stepCom:nth-child(2n-1) .step.leave > img {
+  opacity: 0.6;
+  transition: all 0.5s 0.5s;
+}
+#service .stepCom:nth-child(2n-1) .step.leave > .con {
+  transition: all 0.5s;
+}
+#service .stepCom:nth-child(2n-1) .step.leave > .con > img {
+  -webkit-transform: translate(900px, 0);
+  -moz-transform: translate(900px, 0);
+  -ms-transform: translate(900px, 0);
+  -o-transform: translate(900px, 0);
+  transform: translate(900px, 0);
+}
+#service .stepCom:nth-child(2n-1) .step.leave > .con > p {
+  opacity: 0;
+}
+/*------- 第四屏 -------*/
+#service #section3 .fp-tableCell {
+  vertical-align: inherit;
+}
+#service #section3 .container_main {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#service #section3 .container_main .partners {
+  color: #444;
+  padding-top: 80px;
+  background-color: #fff;
+  height: 80vh;
+  box-sizing: border-box;
+}
+#service #section3 .container_main .partners > h4 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #4444;
+}
+#service #section3 .container_main .partners > p {
+  text-align: center;
+  margin-top: 12px;
+  color: #444;
+}
+#service #section3 .container_main .partners > .con ul {
+  margin-top: 60px;
+}
+#service #section3 .container_main .partners > .con ul li {
+  width: 295px;
+  height: 150px;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 13px;
+  background-color: #fcfcfc;
+  position: relative;
+}
+#service #section3 .container_main .partners > .con ul li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#service #section3 .container_main .partners > .con ul li:hover {
+  background-color: #fff;
+}
+#service #section3 .container_main .partners > .con ul li:nth-child(4n) {
+  margin-right: 0;
+}
+#service #section3 .container_main .foot_nav {
+  background-color: #333;
+  height: 20vh;
+}
