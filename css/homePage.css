@@ -512,6 +512,53 @@
   color: #999;
   margin-left: 30px;
 }
+.homePage > .select {
+  padding-top: 40px;
+  background-color: #fff;
+}
+.homePage > .select > h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.homePage > .select > p {
+  text-align: center;
+  color: #fff;
+}
+.homePage > .select > .container {
+  margin-top: 52px;
+}
+.homePage > .select > .container > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.homePage > .select > .container > ul > li {
+  list-style: none;
+  padding: 0 30px;
+}
+.homePage > .select > .container > ul > li .con {
+  height: 252px;
+  text-align: center;
+  padding-top: 110px;
+}
+.homePage > .select > .container > ul > li .con > img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 0;
+}
+.homePage > .select > .container > ul > li .con > h4 {
+  color: #fff;
+}
+.homePage > .select > .container > ul > li .con > p {
+  font-size: 18px;
+  color: #fff;
+}
 @media (max-width: 768px) {
   .homePage .banner > .msg {
     position: absolute;
@@ -540,7 +587,7 @@
   .homePage > .service > h3 {
     text-align: center;
     color: #444;
-    font-size: 15px;
+    font-size: 18px;
   }
   .homePage > .service > p {
     text-align: center;
@@ -556,14 +603,14 @@
   }
   .homePage > .service > .container > ul > li {
     list-style: none;
-    height: 160px;
+    height: 120px;
     padding: 0;
     position: relative;
     /*border-top: 1px solid #f5f5f5;
             border-bottom: 1px solid #f5f5f5;*/
   }
   .homePage > .service > .container > ul > li .con {
-    width: 300px;
+    width: 230px;
     height: 100%;
     position: absolute;
     left: 50%;
@@ -575,7 +622,7 @@
   }
   .homePage > .service > .container > ul > li .con > img {
     float: left;
-    width: 60px;
+    width: 55px;
     left: 0;
     position: absolute;
     top: 50%;
@@ -587,9 +634,9 @@
   }
   .homePage > .service > .container > ul > li .con > p {
     float: left;
-    font-size: 12px;
+    font-size: 15px;
     color: #999;
-    left: 80px;
+    left: 55px;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -597,6 +644,40 @@
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
+  }
+  .homePage > .select {
+    padding-top: 10px;
+    background-color: #fff;
+    background: url('/image/bj-choose.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .homePage > .select > h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+  }
+  .homePage > .select > p {
+    text-align: center;
+    color: #fff;
+  }
+  .homePage > .select > .container > ul > li {
+    padding: 0 48px;
+  }
+  .homePage > .select > .container > ul > li .con {
+    height: 220px;
+    padding-top: 84px;
+  }
+  .homePage > .select > .container > ul > li .con > h4 {
+    font-size: 16px;
+  }
+  .homePage > .select > .container > ul > li .con > img {
+    width: 75px;
+  }
+  .homePage > .select > .container > ul > li .con > p {
+    font-size: 15px;
+    margin-left: 0;
   }
 }
 /* 小屏幕（平板，大于等于 768px） */
@@ -623,6 +704,18 @@
   }
   .homePage > .service > .container {
     margin-top: 26px;
+  }
+  .homePage > .service > .container > ul > li {
+    height: 155px;
+  }
+  .homePage > .service > .container > ul > li:nth-child(5) {
+    height: 200px;
+  }
+  .homePage > .select {
+    background: url('/image/bj-choose.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
   }
 }
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -656,6 +749,12 @@
     color: #f7f7f7;
     font-size: 16px;
   }
+  .homePage .select {
+    background: url('/image/bj-choose.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
 }
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 1200px) {
@@ -686,5 +785,14 @@
   .homePage .banner > .msg > p {
     color: #f7f7f7;
     font-size: 16px;
+  }
+  .homePage > .select {
+    background: url('/image/bj-choose.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .homePage > .select > .container > ul > li .con {
+    height: 300px;
   }
 }

@@ -177,6 +177,46 @@ body {
   .home .row .nav > ul > li.current {
     border: none;
   }
+  .home .row .nav > p {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: 20px;
+  }
+  .home .row .nav > p > img {
+    width: 20px;
+    height: 15px;
+  }
+  .home .row .nav > p.tell {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: 70px;
+    display: block;
+    font-size: 15px;
+    color: #1772c3;
+    padding-left: 28px;
+  }
+  .home .row .nav > p.tell > img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    left: 0px;
+    width: 21px;
+    height: 15px;
+  }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) and (max-width: 992px) {
