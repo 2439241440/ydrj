@@ -285,14 +285,15 @@
     margin: 0 auto;
   }
   .service_process .step > ul > li .container > .con > img {
+    width: 160px;
     margin-bottom: 18px;
   }
   .service_process .step > ul > li .container > .con > p.has_n {
     display: none;
   }
   .service_process .step > ul > li .container > .con > p.no_n {
-    font-size: 16px;
-    line-height: 36px;
+    font-size: 14px;
+    line-height: 24px;
     display: block;
   }
   .service_process .step > ul > li:nth-child(2n-1) {
@@ -378,7 +379,7 @@
     display: none;
   }
   .service_process .step > ul > li .container > .con > p.no_n {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 36px;
     display: block;
   }

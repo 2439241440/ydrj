@@ -1,35 +1,87 @@
-/*
-.toTop{
-  position:fixed;
-  bottom:65px;
-  right:137px;
-  -webkit-transform: translate(0,-50%);
-  -moz-transform: translate(0,-50%);
-  -ms-transform: translate(0,-50%);
-  -o-transform: translate(0,-50%);
-  transform: translate(0,-50%);
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius:50%;
-  padding-top: 10px;
-  box-sizing: border-box;
-  background-color: rgba(0,0,0,0.4);
-  >img {
-    width: 30px;
-  }
-}*/
-/*------- 第一屏 -------*/
-#homePage #section0 {
-  position: relative;
-  background: url('/image/home-banner.png') top center no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
+.mass {
+  overflow: hidden;
 }
-#homePage #section0 .nav {
-  height: 88px;
+.mass > .banner > img {
+  width: 100%;
+}
+.mass .service {
   background-color: #fff;
+  padding-top: 80px;
+}
+.mass .service > h4 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 0;
+  margin: 0;
+}
+.mass .service > p {
+  text-align: center;
+  margin-top: 12px;
+  color: #999;
+}
+.mass .service > div.con {
+  position: relative;
+  margin-top: 120px;
+}
+.mass .service > div.con > .item {
+  width: 100%;
+  margin-bottom: 115px;
+  height: 200px;
+  position: relative;
+}
+.mass .service > div.con > .item > img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.mass .service > div.con > .item > img.right {
+  right: 0;
+}
+.mass .service > img {
+  display: none;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.mass > .select {
+  padding-top: 40px;
+  background-color: #fff;
+}
+.mass > .select > h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.mass > .select > p {
+  text-align: center;
+  color: #fff;
+}
+.mass > .select > .container {
+  margin-top: 52px;
+}
+.mass > .select > .container > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mass > .select > .container > ul > li {
+  list-style: none;
+}
+.mass > .select > .container > ul > li .con {
+  height: 255px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  padding-top: 125px;
+  margin: 0 auto;
+}
+.mass > .select > .container > ul > li .con > img {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -37,437 +89,249 @@
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  top: 50px;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+  top: 0;
 }
-#homePage #section0 .nav > h1 {
-  left: 99999999px;
-  position: absolute;
-}
-#homePage #section0 .nav > img {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  left: 48px;
-}
-#homePage #section0 .nav > ul {
-  float: right;
-}
-#homePage #section0 .nav > ul > li {
-  float: left;
-  width: 130px;
-  height: 100px;
-  line-height: 88px;
-  text-align: center;
-  font-size: 16px;
-  color: #444;
-}
-#homePage #section0 .nav > ul > li.current {
-  background-color: #1772c3;
+.mass > .select > .container > ul > li .con > span {
+  font-size: 50px;
   color: #fff;
-  border-bottom: 4px solid #ff91200;
-  box-sizing: border-box;
-}
-#homePage #section0 .msg {
   position: absolute;
-  right: 340px;
-  top: 625px;
-}
-#homePage #section0 .msg > h4 {
-  color: #f7f7f7;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-#homePage #section0 .msg > h4 > span {
-  font-size: 42px;
-}
-#homePage #section0 .msg > p {
-  color: #f7f7f7;
-  font-size: 16px;
-}
-/*------- 第二屏 -------*/
-#homePage #section1 {
-  background: #fff;
-}
-#homePage #section1 .service {
-  position: absolute;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 24px;
 }
-#homePage #section1 .service > h4 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 34px;
-}
-#homePage #section1 .service > p {
-  text-align: center;
-  margin-top: 12px;
-}
-#homePage #section1 .service > div.con {
-  position: relative;
-  height: 660px;
-  margin-top: 73px;
-  background: url('/image/service.png') top center no-repeat;
-}
-#homePage #section1 .service > div.con > img.p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-left: 13px;
-}
-#homePage #section1 .service > div.con .left {
-  width: 50%;
-  height: 100%;
-  float: left;
-  position: relative;
-}
-#homePage #section1 .service > div.con .left > ul > li {
-  position: absolute;
-}
-#homePage #section1 .service > div.con .left > ul > li > p {
-  float: left;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  left: 190px;
-  font-size: 16px;
-  color: #666;
-  text-align: right;
-}
-#homePage #section1 .service > div.con .left > ul > li:nth-child(1) {
-  width: 264px;
-  top: 45px;
-  right: 45px;
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s ;
-}
-#homePage #section1 .service > div.con .left > ul > li:nth-child(2) {
-  width: 359px;
-  top: 278px;
-  right: 164px;
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s;
-}
-#homePage #section1 .service > div.con .left > ul > li:nth-child(3) {
-  width: 370px;
-  right: 50px;
-  top: 536px;
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s;
-}
-#homePage #section1 .service > div.con .right {
-  width: 50%;
-  height: 100%;
-  float: left;
-  position: relative;
-}
-#homePage #section1 .service > div.con .right > ul > li {
-  position: absolute;
-}
-#homePage #section1 .service > div.con .right > ul > li > img {
-  float: right;
-}
-#homePage #section1 .service > div.con .right > ul > li > p {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  left: 0px;
-  font-size: 16px;
-  color: #666;
-}
-#homePage #section1 .service > div.con .right > ul > li:nth-child(1) {
-  width: 290px;
-  top: 37px;
-  left: 79px;
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s;
-}
-#homePage #section1 .service > div.con .right > ul > li:nth-child(2) {
-  width: 331px;
-  top: 288px;
-  left: 209px;
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s;
-}
-#homePage #section1 .service > div.con .right > ul > li:nth-child(3) {
-  width: 314px;
-  left: 79px;
-  top: 538px;
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s ;
-}
-#homePage #section1 .service > div.con.join .left > ul > li:nth-child(1) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s ;
-}
-#homePage #section1 .service > div.con.join .left > ul > li:nth-child(2) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s 0.5s;
-}
-#homePage #section1 .service > div.con.join .left > ul > li:nth-child(3) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s 1s;
-}
-#homePage #section1 .service > div.con.join .right > ul > li:nth-child(1) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s 1s;
-}
-#homePage #section1 .service > div.con.join .right > ul > li:nth-child(2) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s 0.5s;
-}
-#homePage #section1 .service > div.con.join .right > ul > li:nth-child(3) {
-  -webkit-transform: translate(0px, 0);
-  -moz-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  -o-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition: all 0.5s ;
-}
-#homePage #section1 .service > div.con.leave .left > ul > li:nth-child(1) {
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s 0.5s;
-}
-#homePage #section1 .service > div.con.leave .left > ul > li:nth-child(2) {
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s 0.5s;
-}
-#homePage #section1 .service > div.con.leave .left > ul > li:nth-child(3) {
-  -webkit-transform: translate(-1200px, 0);
-  -moz-transform: translate(-1200px, 0);
-  -ms-transform: translate(-1200px, 0);
-  -o-transform: translate(-1200px, 0);
-  transform: translate(-1200px, 0);
-  transition: all 0s 0.5s;
-}
-#homePage #section1 .service > div.con.leave .right > ul > li:nth-child(1) {
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s 0.5s;
-}
-#homePage #section1 .service > div.con.leave .right > ul > li:nth-child(2) {
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s 0.5s;
-}
-#homePage #section1 .service > div.con.leave .right > ul > li:nth-child(3) {
-  -webkit-transform: translate(1200px, 0);
-  -moz-transform: translate(1200px, 0);
-  -ms-transform: translate(1200px, 0);
-  -o-transform: translate(1200px, 0);
-  transform: translate(1200px, 0);
-  transition: all 0s 0.5s;
-}
-/*------- 第三屏 -------*/
-#homePage #section2 {
-  background: url('/image/bj-choose.png') top center no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-#homePage #section2 .choose {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#homePage #section2 .choose > h4 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 34px;
+.mass > .select > .container > ul > li .con > h4 {
   color: #fff;
 }
-#homePage #section2 .choose > p {
-  text-align: center;
-  margin-top: 12px;
+.mass > .select > .container > ul > li .con > p {
+  font-size: 18px;
   color: #fff;
-}
-#homePage #section2 .choose > .con > ul {
-  margin-top: 84px;
-}
-#homePage #section2 .choose > .con > ul > li {
-  width: 33.3%;
-  height: 290px;
-  float: left;
-  text-align: center;
-}
-#homePage #section2 .choose > .con > ul > li > img {
-  width: 108px;
-  height: 108px;
-  margin-bottom: 36px;
-}
-#homePage #section2 .choose > .con > ul > li > h4 {
-  font-size: 24px;
-  font-weight: 400;
-}
-#homePage #section2 .choose > .con > ul > li > p {
-  width: 230px;
+  width: 150px;
   margin: 0 auto;
-  font-size: 14px;
-  margin-top: 12px;
-  line-height: 22px;
 }
-#homePage #section2 .choose > .con > ul > li:nth-child(4) {
-  margin-top: 92px;
+@media (max-width: 768px) {
+  .mass .banner > .msg {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 999999;
+  }
+  .mass .banner > .msg > h4 {
+    color: #1772c3;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+  }
+  .mass .banner > .msg > h4 > span {
+    font-size: 18px;
+  }
+  .mass .banner > .msg > p {
+    color: #1772c3;
+    font-size: 16px;
+  }
+  .mass .service {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mass .service > img {
+    display: block;
+  }
+  .mass .service > h4 {
+    text-align: center;
+    color: #444;
+    font-size: 18px;
+  }
+  .mass .service > p {
+    text-align: center;
+    color: #999;
+  }
+  .mass .service > div.con {
+    display: none;
+  }
+  .mass > .select {
+    background: url('/image/bj-Serviceplan.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .mass > .select > h4 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+  }
+  .mass > .select > h4 > span {
+    font-size: 18px;
+  }
+  .mass > .select > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .mass > .select > .container {
+    margin-top: 52px;
+  }
+  .mass > .select > .container > ul > li {
+    list-style: none;
+  }
+  .mass > .select > .container > ul > li .con {
+    height: 252px;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .mass > .select > .container > ul > li .con > img {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 0;
+  }
+  .mass > .select > .container > ul > li .con > h4 {
+    color: #fff;
+  }
+  .mass > .select > .container > ul > li .con > p {
+    font-size: 14px;
+    color: #fff;
+  }
 }
-#homePage #section2 .choose > .con > ul > li:nth-child(5) {
-  margin-top: 92px;
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width: 992px) {
+  .mass .banner > .msg {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 999999;
+  }
+  .mass .banner > .msg > h4 {
+    color: #1772c3;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+  }
+  .mass .banner > .msg > h4 > span {
+    font-size: 18px;
+  }
+  .mass .banner > .msg > p {
+    color: #1772c3;
+    font-size: 16px;
+  }
+  .mass .service {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .mass .service > img {
+    display: block;
+  }
+  .mass .service > h4 {
+    text-align: center;
+    color: #444;
+    font-size: 30px;
+  }
+  .mass .service > p {
+    text-align: center;
+    color: #999;
+  }
+  .mass .service > div.con {
+    display: none;
+  }
+  .mass > .select {
+    background: url('/image/bj-Serviceplan.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
 }
-#homePage #section2 .choose > .con > ul > li:nth-child(6) {
-  margin-top: 92px;
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mass {
+    width: 100%;
+  }
+  .mass .banner {
+    width: 100%;
+    height: 100vh;
+    background: url('/image/quality-banner.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .mass .banner > .msg {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+  .mass .service > div.con {
+    position: relative;
+    margin-top: 30px;
+  }
+  .mass .service > div.con > .item {
+    width: 100%;
+    margin-bottom: 50px;
+    height: 200px;
+    position: relative;
+  }
+  .mass .service > div.con > .item > img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  .mass .service > div.con > .item > img.right {
+    right: 0;
+  }
+  .mass .select {
+    background: url('/image/bj-Service-plan.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
 }
-/*------- 第四屏 -------*/
-#homePage #section3 .fp-tableCell {
-  vertical-align: inherit;
-}
-#homePage #section3 .container {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#homePage #section3 .container .partners {
-  color: #444;
-  padding-top: 80px;
-  background-color: #fff;
-  height: 80vh;
-  box-sizing: border-box;
-}
-#homePage #section3 .container .partners > h4 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 34px;
-  color: #4444;
-}
-#homePage #section3 .container .partners > p {
-  text-align: center;
-  margin-top: 12px;
-  color: #444;
-}
-#homePage #section3 .container .partners > .con ul {
-  margin-top: 60px;
-}
-#homePage #section3 .container .partners > .con ul li {
-  width: 290px;
-  height: 150px;
-  border: 1px solid #f0f0f0;
-  border-radius: 3px;
-  float: left;
-  box-sizing: border-box;
-  margin-right: 13px;
-  background-color: #fcfcfc;
-  position: relative;
-}
-#homePage #section3 .container .partners > .con ul li img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#homePage #section3 .container .partners > .con ul li:hover {
-  background-color: #fff;
-}
-#homePage #section3 .container .partners > .con ul li:nth-child(4n) {
-  margin-right: 0;
-}
-#homePage #section3 .container .foot_nav {
-  background-color: #333;
-  height: 20vh;
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  .mass {
+    width: 100%;
+  }
+  .mass .banner {
+    width: 100%;
+    height: 100vh;
+    background: url('/image/quality-banner.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .mass .banner > .msg {
+    position: absolute;
+    right: 200px;
+    bottom: 40px;
+  }
+  .mass .banner > .msg > h4 {
+    color: #f7f7f7;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  .mass .banner > .msg > h4 > span {
+    font-size: 42px;
+  }
+  .mass .banner > .msg > p {
+    color: #f7f7f7;
+    font-size: 16px;
+  }
+  .mass > .select {
+    background: url('/image/bj-Service-plan.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .mass > .select > .container > ul > li .con {
+    height: 300px;
+  }
 }
