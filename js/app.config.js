@@ -19,16 +19,15 @@ angular.module('myApp')
                 views:{
                     'home':{
                         templateUrl:'/template/homePage.html',
-                        controller:'homePage'
+                        // controller:'homePage'
                     }
                 }
             })
-            .state('home.service',{
-                url:'/service',
+            .state('home.serviceProcess',{
+                url:'/serviceProcess',
                 views:{
                     'home':{
-                        templateUrl:'/template/service.html',
-                        controller:'service'
+                        templateUrl:'/template/serviceProcess.html',
                     }
                 }
             })
@@ -37,7 +36,7 @@ angular.module('myApp')
                 views:{
                     'home':{
                         templateUrl:'/template/mass.html',
-                        controller:'mass'
+                        // controller:'mass'
                     }
                 }
             })
@@ -49,8 +48,11 @@ angular.module('myApp')
     .directive('temp',function(){
         return {
             restrict:'EA',
+            scope:{
+                name:'='
+            },
             template:function(elemaent,attrs){
-               return '<span>'+attrs.title+'</span>';
+               return '<span style="color:#fff;">'+attrs.title+'{{name}}</span>';
             },
             replace:true
         }

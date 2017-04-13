@@ -5,4 +5,4 @@
 
 'use strict'
 
-angular.module('myApp',['ui.router','home','homePage','service','mass'])
+angular.module('myApp',['ui.router','home'])
