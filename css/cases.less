@@ -174,7 +174,30 @@
       }
     }
     .swiper_con{
+      >.swiper_tab{
+        text-align: center;
+        >ul{
+          list-style: none;
+          padding-left: 0;
+          display: inline-block;
+          width: 100%;
+          >li{
+            float:left;
+            width: 33.3%;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+          }
+          >li.current{
+            background-color: #FF7700;
+            color:#fff;
+            border-radius:5px;
+          }
+        }
+      }
       >.swiper_content{
+        height:auto;
         >.item{
           text-align: center;
           ul{
@@ -182,7 +205,7 @@
             padding: 0;
             //display: inline-block;
             //margin:0 auto;
-            margin-top: 35px;
+            margin-top: 5px;
             float:left;
             margin-left: 0px;
             width:auto;
