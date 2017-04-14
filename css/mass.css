@@ -148,6 +148,7 @@
   .mass .service > p {
     text-align: center;
     color: #999;
+    margin-top: -4px;
   }
   .mass .service > div.con {
     display: none;

@@ -19,7 +19,7 @@ angular.module('myApp')
                 views:{
                     'home':{
                         templateUrl:'/template/homePage.html',
-                        // controller:'homePage'
+                        controller:'homePage'
                     }
                 }
             })
@@ -28,6 +28,7 @@ angular.module('myApp')
                 views:{
                     'home':{
                         templateUrl:'/template/serviceProcess.html',
+                        controller:'serviceProcess'
                     }
                 }
             })
@@ -36,7 +37,34 @@ angular.module('myApp')
                 views:{
                     'home':{
                         templateUrl:'/template/mass.html',
-                        // controller:'mass'
+                        controller:'mass'
+                    }
+                }
+            })
+            .state('home.cases',{
+                url:'/cases',
+                views:{
+                    'home':{
+                        templateUrl:'/template/cases.html',
+                        controller:'cases'
+                    }
+                }
+            })
+            .state('home.joinUs',{
+                url:'/joinUs',
+                views:{
+                    'home':{
+                        templateUrl:'/template/joinUs.html',
+                        controller:'joinUs'
+                    }
+                }
+            })
+            .state('home.aboutUs',{
+                url:'/aboutUs',
+                views:{
+                    'home':{
+                        templateUrl:'/template/aboutUs.html',
+                        controller:'aboutUs'
                     }
                 }
             })
@@ -57,3 +85,17 @@ angular.module('myApp')
             replace:true
         }
     })
+    .directive('map',function(){
+        return {
+            restrict:'EA',
+            controller:function($element,$attrs){
+                var mapObj = new M($attrs.id,13);
+                mapObj.geolocation(function(complate){
+                    var currentPosition = [121.50013, 31.13897];
+                    mapObj.marker(currentPosition);
+                    mapObj.infoWindow(currentPosition,'上海益等软件科技有限公司')
+                })
+            }
+        }
+    })
+

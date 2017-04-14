@@ -15,7 +15,8 @@ angular.module('home',[])
             $scope.isShowMenu = !$scope.isShowMenu;
         }
         $scope.changePage = function(index,otherwise){
-            $scope.index = index;
+            $rootScope.bar_index = index;
             $scope.isShowMenu =false;
         }
+        $rootScope.bar_index = 0;
     })

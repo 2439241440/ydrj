@@ -8,12 +8,12 @@
                 <h1>益等软件</h1>
                 <img src="/image/logo.png" >
                 <ul ng-show="isShowMenu">
-                    <li ng-class="{'current':index == 0}" ui-sref="home.homePage"  ng-click="changePage(0)">首页</li>
-                    <li ng-class="{'current':index == 1}" ui-sref="home.serviceProcess" ng-click="changePage(1)">服务流程</li>
-                    <li ng-class="{'current':index == 2}" ui-sref="home.mass" ng-click="changePage(2)">质量监督</li>
-                    <li ng-class="{'current':index == 3}" ui-sref="home.example" ng-click="changePage(3)">经典案例</li>
-                    <li ng-class="{'current':index == 4}" ui-sref="home.join" ng-click="changePage(4)">加入我们</li>
-                    <li ng-class="{'current':index == 5}" ui-sref="home.about" ng-click="changePage(5)">关于益等</li>
+                    <li ng-class="{'current':bar_index == 0}" ui-sref="home.homePage"  ng-click="changePage(0)">首页</li>
+                    <li ng-class="{'current':bar_index == 1}" ui-sref="home.serviceProcess" ng-click="changePage(1)">服务流程</li>
+                    <li ng-class="{'current':bar_index == 2}" ui-sref="home.mass" ng-click="changePage(2)">质量监督</li>
+                    <li ng-class="{'current':bar_index == 3}" ui-sref="home.cases" ng-click="changePage(3)">经典案例</li>
+                    <li ng-class="{'current':bar_index == 4}" ui-sref="home.joinUs" ng-click="changePage(4)">加入我们</li>
+                    <li ng-class="{'current':bar_index == 5}" ui-sref="home.aboutUs" ng-click="changePage(5)">关于益等</li>
                 </ul>
                 <!--<button class="glyphicon glyphicon-list pull-right hidden-md hidden-lg "></button>-->
                 <p ng-click="toggle()" class=" pull-right hidden-md hidden-lg"><img src="/image/menu.png" alt=""></p>

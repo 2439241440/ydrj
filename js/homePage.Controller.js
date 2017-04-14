@@ -4,5 +4,5 @@
 
 angular.module('homePage',[])
     .controller('homePage',function($scope,$rootScope){
-
+        $rootScope.bar_index = 0;
     })
