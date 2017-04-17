@@ -19,7 +19,7 @@ angular.module('myApp')
                 url:'/homePage',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/homePage.html',
+                        templateUrl:'/template/homePage.html',
                         controller:'homePage'
                     }
                 }
@@ -28,7 +28,7 @@ angular.module('myApp')
                 url:'/serviceProcess',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/serviceProcess.html',
+                        templateUrl:'/template/serviceProcess.html',
                         controller:'serviceProcess'
                     }
                 }
@@ -37,7 +37,7 @@ angular.module('myApp')
                 url:'/mass',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/mass.html',
+                        templateUrl:'/template/mass.html',
                         controller:'mass'
                     }
                 }
@@ -46,7 +46,7 @@ angular.module('myApp')
                 url:'/cases',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/cases.html',
+                        templateUrl:'/template/cases.html',
                         controller:'cases'
                     }
                 }
@@ -55,7 +55,7 @@ angular.module('myApp')
                 url:'/joinUs',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/joinUs.html',
+                        templateUrl:'/template/joinUs.html',
                         controller:'joinUs'
                     }
                 }
@@ -64,7 +64,7 @@ angular.module('myApp')
                 url:'/aboutUs',
                 views:{
                     'home':{
-                        templateUrl:'/ydrj/template/aboutUs.html',
+                        templateUrl:'/template/aboutUs.html',
                         controller:'aboutUs'
                     }
                 }

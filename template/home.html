@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="nav main  col-md-10 col-sm-12 col-xs-12" ng-if="navShow" >
-                <h1>益等软件</h1>
+                <!--<h1>益等软件</h1>-->
                 <img src="/image/logo.png" >
                 <ul ng-show="isShowMenu">
                     <li ng-class="{'current':bar_index == 0}" ui-sref="home.homePage"  ng-click="changePage(0)">首页</li>
@@ -16,8 +16,8 @@
                     <li ng-class="{'current':bar_index == 5}" ui-sref="home.aboutUs" ng-click="changePage(5)">关于益等</li>
                 </ul>
                 <!--<button class="glyphicon glyphicon-list pull-right hidden-md hidden-lg "></button>-->
-                <p ng-click="toggle()" class=" pull-right hidden-md hidden-lg"><img src="{{rootPath}}/image/menu.png" alt=""></p>
-                <p class="tell hidden-md hidden-lg"><img src="{{rootPath}}/image/tell.png" alt="">400-800-100</p>
+                <p ng-click="toggle()" class=" pull-right hidden-md hidden-lg"><img src="/image/menu.png" alt=""></p>
+                <p class="tell hidden-md hidden-lg"><img src="/image/tell.png" alt="">400-800-100</p>
 
 
             </div>
@@ -29,13 +29,13 @@
 
 
 <div class="tell">
-    <img src="{{rootPath}}/image/客服.png" alt="">
+    <img src="/image/客服.png" alt="">
     <p>400-800-200</p>
 </div>
 
 <div class="toTop">
-    <img src="{{rootPath}}/image/to_top.png">
+    <img src="/image/to_top.png">
 </div>
 <div class="toBottom">
-    <img src="{{rootPath}}/image/to_top.png">
+    <img src="/image/to_top.png">
 </div>

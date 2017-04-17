@@ -10,3 +10,13 @@ angular.module('myApp',['ui.router','home','ksSwiper','homePage','serviceProcess
         $rootScope.title='益等软件-首页';
         $rootScope.rootPath = '/ydrj';
     })
+    .directive('width',function(){
+        return {
+            strict:'EA',
+            controller:function($element){
+                console.log($element);
+                console.log(angular.element($element)[0].scrollWidth);
+                console.log(angular.element($element)[0].offsetWidth);
+            }
+        }
+    })
