@@ -6,14 +6,16 @@
 'use strict'
 
 angular.module('myApp',['ui.router','home','ksSwiper','homePage','serviceProcess','mass','cases','joinUs','aboutUs'])
-    .run(function($rootScope){
+    .run(function($rootScope,$timeout){
         $rootScope.$on('$stateChangeStart', function(){
             $rootScope.isLoading = true;
             console.log('加载中，，，');
         })
         $rootScope.$on('$stateChangeSuccess', function(){
-            $rootScope.isLoading = false;
-            console.log('加载完成');
+            $timeout(function(){
+                $rootScope.isLoading = false;
+                console.log('加载完成');
+            },500)
         })
     })
     .controller('mainController',function($rootScope){
