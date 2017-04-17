@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/4/11.
  */
 
-angular.module('home',['ngAnimate'])
+angular.module('home',[])
     .controller('home',function($scope,$compile,$rootScope,$timeout){
        /* $scope.mainOptions = {
             // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
