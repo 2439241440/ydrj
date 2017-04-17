@@ -558,6 +558,7 @@
 .homePage > .select > .container > ul > li .con > p {
   font-size: 18px;
   color: #fff;
+  float: right;
 }
 @media (max-width: 768px) {
   .homePage .banner > .msg {
@@ -634,7 +635,7 @@
   }
   .homePage > .service > .container > ul > li .con > p {
     float: left;
-    font-size: 15px;
+    font-size: 13px;
     color: #999;
     left: 55px;
     position: absolute;
@@ -676,7 +677,7 @@
     width: 75px;
   }
   .homePage > .select > .container > ul > li .con > p {
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 0;
   }
 }

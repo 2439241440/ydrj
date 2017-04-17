@@ -16,8 +16,8 @@
                     <li ng-class="{'current':bar_index == 5}" ui-sref="home.aboutUs" ng-click="changePage(5)">关于益等</li>
                 </ul>
                 <!--<button class="glyphicon glyphicon-list pull-right hidden-md hidden-lg "></button>-->
-                <p ng-click="toggle()" class=" pull-right hidden-md hidden-lg"><img src="/image/menu.png" alt=""></p>
-                <p class="tell hidden-md hidden-lg"><img src="/image/tell.png" alt="">400-800-100</p>
+                <p ng-click="toggle()" class=" pull-right hidden-md hidden-lg"><img src="{{rootPath}}/image/menu.png" alt=""></p>
+                <p class="tell hidden-md hidden-lg"><img src="{{rootPath}}/image/tell.png" alt="">400-800-100</p>
 
 
             </div>
@@ -28,15 +28,14 @@
 <div ui-view="home"></div>
 
 
-<!--
 <div class="tell">
-    <img src="/image/客服.png" alt="">
+    <img src="{{rootPath}}/image/客服.png" alt="">
     <p>400-800-200</p>
 </div>
 
 <div class="toTop">
-    <img src="/image/to_top.png">
+    <img src="{{rootPath}}/image/to_top.png">
 </div>
 <div class="toBottom">
-    <img src="/image/to_top.png">
-</div>-->
+    <img src="{{rootPath}}/image/to_top.png">
+</div>

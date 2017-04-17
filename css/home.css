@@ -24,7 +24,7 @@ body {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  bottom: 45px;
+  bottom: 32px;
   width: 100%;
   text-align: center;
   color: #ff7800;
@@ -265,6 +265,12 @@ body {
   .home .row .nav > ul {
     display: block!important;
   }
+  div.tell {
+    display: block!important;
+  }
+  /*.toTop,.toBottom{
+    display:block!important;
+  }*/
 }
 /* 小屏幕（平板，大于等于 768px） */
 /* 中等屏幕（桌面显示器，大于等于 992px） */

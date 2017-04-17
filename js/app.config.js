@@ -6,8 +6,9 @@
 
 angular.module('myApp')
 
-    .config(function($stateProvider,$urlRouterProvider){
+    .config(function($stateProvider,$urlRouterProvider,$locationProvider){
         // $rootScope.otherwise = 'homepage';
+        // $locationProvider.html5Mode(true);
         $stateProvider
             .state('home',{
                 url:'/home',
@@ -18,7 +19,7 @@ angular.module('myApp')
                 url:'/homePage',
                 views:{
                     'home':{
-                        templateUrl:'/template/homePage.html',
+                        templateUrl:'/ydrj/template/homePage.html',
                         controller:'homePage'
                     }
                 }
@@ -27,7 +28,7 @@ angular.module('myApp')
                 url:'/serviceProcess',
                 views:{
                     'home':{
-                        templateUrl:'/template/serviceProcess.html',
+                        templateUrl:'/ydrj/template/serviceProcess.html',
                         controller:'serviceProcess'
                     }
                 }
@@ -36,7 +37,7 @@ angular.module('myApp')
                 url:'/mass',
                 views:{
                     'home':{
-                        templateUrl:'/template/mass.html',
+                        templateUrl:'/ydrj/template/mass.html',
                         controller:'mass'
                     }
                 }
@@ -45,7 +46,7 @@ angular.module('myApp')
                 url:'/cases',
                 views:{
                     'home':{
-                        templateUrl:'/template/cases.html',
+                        templateUrl:'/ydrj/template/cases.html',
                         controller:'cases'
                     }
                 }
@@ -54,7 +55,7 @@ angular.module('myApp')
                 url:'/joinUs',
                 views:{
                     'home':{
-                        templateUrl:'/template/joinUs.html',
+                        templateUrl:'/ydrj/template/joinUs.html',
                         controller:'joinUs'
                     }
                 }
@@ -63,7 +64,7 @@ angular.module('myApp')
                 url:'/aboutUs',
                 views:{
                     'home':{
-                        templateUrl:'/template/aboutUs.html',
+                        templateUrl:'/ydrj/template/aboutUs.html',
                         controller:'aboutUs'
                     }
                 }
@@ -73,6 +74,7 @@ angular.module('myApp')
     .value('navShow',{
         'val':true
     })
+    .constant('rootPath','/ydrj')
     .directive('temp',function(){
         return {
             restrict:'EA',
