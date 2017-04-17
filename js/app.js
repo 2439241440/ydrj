@@ -9,14 +9,9 @@ angular.module('myApp',['ui.router','home','ksSwiper','homePage','serviceProcess
     .run(function($rootScope,$timeout){
         $rootScope.$on('$stateChangeStart', function(){
             $rootScope.isLoading = true;
-            console.log('加载中，，，');
         })
-      /*  $rootScope.$on('$stateChangeSuccess', function(){
-
-        })*/
         $rootScope.$on('$viewContentLoaded', function(event, viewConfig){
             $rootScope.isLoading = false;
-            console.log('加载完成');
         });
     })
     .controller('mainController',function($rootScope,$scope){
