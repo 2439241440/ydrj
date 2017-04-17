@@ -11,7 +11,7 @@ angular.module('myApp',['ui.router','home','ksSwiper','homePage','serviceProcess
             $rootScope.isLoading = true;
             console.log('加载中，，，');
         })
-        $rootScope.$on('$stateChangeStart', function(){
+        $rootScope.$on('$stateChangeSuccess', function(){
             $rootScope.isLoading = false;
             console.log('加载完成');
         })
