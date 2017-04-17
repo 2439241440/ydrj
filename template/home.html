@@ -87,7 +87,7 @@
     </div>
 </div>
 
-<div ui-view="home" class="testAnimate" ng-class="{'ng-enter':enter,'ng-leave':leave}"></div>
+<div ui-view="home" class="testAnimate" ng-hide="isLoading" ng-class="{'ng-enter':enter,'ng-leave':leave}"></div>
 
 <div class="tell">
     <img src="/image/kefu.png" alt="">
@@ -99,4 +99,8 @@
 </div>
 <div class="toBottom">
     <img src="/image/to_top.png">
+</div>
+<div class="loading" ng-show="isLoading">
+    <img src="/image/loading_max.gif" >
+    <p>加载中...</p>
 </div>

@@ -275,3 +275,29 @@ body {
 /* 小屏幕（平板，大于等于 768px） */
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
+.loading {
+  width: 20%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.loading > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
