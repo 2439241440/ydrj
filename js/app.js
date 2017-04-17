@@ -15,7 +15,7 @@ angular.module('myApp',['ui.router','home','ksSwiper','homePage','serviceProcess
             $timeout(function(){
                 $rootScope.isLoading = false;
                 console.log('加载完成');
-            },500)
+            },100)
         })
     })
     .controller('mainController',function($rootScope){
